@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Chat</title>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-sidebar">
+      <!-- Sidebar with recent chats -->
+    </div>
+    <div class="chat-main">
+      <div class="chat-header">
+        <h2>Chat with <%= recipient.name %></h2>
+      </div>
+      <div class="chat-messages">
+        <!-- Messages will be displayed here -->
+      </div>
+      <div class="input-container">
+        <form id="message-form">
+          <input type="text" placeholder="Type a message" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/js/socket.js"></script>
+</body>
+</html>
